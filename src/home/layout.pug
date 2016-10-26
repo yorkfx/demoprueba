@@ -1,0 +1,47 @@
+div(layout='row' layout-xs='column' layout-align='space-between stretch')
+	aside(flex='15' id='menu')
+		md-toolbar
+			h3 Curiosity Timesheet Panel
+		md-list
+			md-list-item(ng-click='')
+				ng-md-icon(icon='access_time')
+				span Timer
+			md-list-item(ng-click='')
+				ng-md-icon(icon='dashboard')
+				span Dashboard
+			md-list-item(ng-click='')
+				ng-md-icon(icon='assessment')
+				span Reports
+			md-list-item(ng-click='')
+				ng-md-icon(icon='grade')
+				span Saved Reports
+
+		md-divider
+
+		h4 Manage
+
+		md-divider
+
+		md-list
+			md-list-item(ng-click='')
+				ng-md-icon(icon='folder')
+				span Projects
+			md-list-item(ng-click='')
+				ng-md-icon(icon='people')
+				span Clients
+			md-list-item(ng-click='')
+				ng-md-icon(icon='public')
+				span Team
+		flex
+
+		h4 Usuario
+		md-divider
+			md-list
+				md-list-item(ng-click='') 
+					ng-md-icon(icon='person')
+					span Profile
+
+	md-content(flex ui-view='dashboardUI' layout-padding)
+		section Input
+		md-divider
+		section Cards

@@ -1,0 +1,53 @@
+
+md-toolbar(class='md-toolbar-tools' layout-padding)
+	md-button(aria-label='Regresar')
+		ng-md-icon(icon='arrow_back')
+	h2 Nombre Proyecto
+header(class='proyecto')
+	
+md-content(layout='row' layout-align='space-around center')
+	div(flex class='text-center')
+		h2(class='md-headline') Función
+		h3(class='md-subhead') Reporte
+	div(flex class='text-center')
+		h2(class='md-headline') Cliente
+		h3(class='md-subhead') Curiosity
+	div(flex class='text-center')
+		h2(class='md-headline') Marca
+		h3(class='md-subhead') Tricaster
+
+md-divider
+
+md-content(layout='row' layout-align='space-around center')
+	div(flex class='text-center')
+		h2(class='md-headline') Pieza
+		h3(class='md-subhead') Grafico
+	div(flex class='text-center')
+		h2(class='md-headline') Versión
+		h3(class='md-subhead') v1
+	div(flex class='text-center')
+		h2(class='md-headline') Pioridad
+		h3(class='md-subhead') Baja
+
+md-divider
+
+md-content(layout='row' layout-align='space-around center')
+	div(flex class='text-center')
+		h2(class='md-headline') Solicitado
+		h3(class='md-subhead') Alejandra Portilla
+	div(flex class='text-center')
+		h2(class='md-headline') Asignado
+		h3(class='md-subhead') Eduardo Caballeros
+
+md-divider
+
+md-content(layout='row' layout-align='space-around center')
+	md-button(flex='true' class="md-primary md-raised" aria-label='Mas detalles') + Detalles
+	md-button(flex='true' class="md-primary md-raised" aria-label='Agrgar') + Todolist
+
+md-divider
+
+div(class='md-display-3 text-center' layout-padding='true') 
+	span {{counter|formatTimer}}
+	md-button(class='md-primary md-fab' aria-label='Iniciar') 
+		ng-md-icon(icon='play_arrow')

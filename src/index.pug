@@ -1,0 +1,10 @@
+doctype html 
+html(ng-strict-di='true' ng-app='app' ng-controller='AppController as app') 
+head 
+	meta(cherset='utf=8') 
+	base(href='/') 
+	meta(name='viewport' content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width') 
+	title Timesheets
+
+body 
+	div(id='content' flex='100' layout='column' ui-view='content')

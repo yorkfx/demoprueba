@@ -1,0 +1,104 @@
+md-content
+	md-button(class='md-primary' ng-click='bool=true' aria-label='false') Show
+	md-button(class='md-primary' ng-click='bool=false' aria-label='false') Hide
+
+md-content(ng-if='bool' class='fade' layout-padding='20' ng-view)
+	h2 Control
+
+md-toolbar
+	h2(class='md-toolbar-tools')
+		span Proyectos Pendientes
+		div(flex)
+		md-button(class='md-primary md-mini md-fab')
+			md-icon(class='material-icons step')
+md-content
+	md-list
+
+		md-list-item(class='md-3-line' layout-padding='0' layout='row')
+			div(class='md-list-item-text')
+				h3 Reporte
+				h4 PRI / Yucatán
+				p Análisis de Percepción Digital 
+			div(flex='nogrow')
+				md-button(class='md-primary md-fab' ng-click='takeAction()')
+					md-icon(class='material-icons step')
+				span {{counter|formatTimer}}
+
+		md-divider 
+
+		md-list-item(class='md-3-line' layout-padding='0' layout='row')
+			div(class='md-list-item-text' flex)
+				h3 Optimización
+				h4 Posadas / Fiesta Americana
+				p Optimización Reporte Diario
+			div(flex='nogrow')
+				md-button(class='md-primary md-fab' ng-click='takeAction()')
+					md-icon(class='material-icons step')
+				span {{counter|formatTimer}}
+
+		md-divider 
+
+		md-list-item(class='md-3-line' layout-padding='0' layout='row')
+			div(class='md-list-item-text' flex)
+				h3 Pitches
+				h4 Curiosity / Yucatan
+				p Análisis de percepción J Valdés
+			div(flex='nogrow')
+				md-button(class='md-primary md-fab' ng-click='takeAction()')
+					md-icon(class='material-icons step')
+				span {{counter|formatTimer}}
+		md-divider 
+
+
+md-toolbar
+	h2(class='md-toolbar-tools')
+		span Tareas Pendientes
+
+md-content
+	//- md-list
+	//- 	md-list-item(class='md-3-line' layout-padding='0' layout='row' layout-align="space-between stretch")
+	//- 		md-content(flex='auto')
+	//- 			md-input-container
+	//- 				input(type='text')
+	//- 		div(flex='nogrow')
+	//- 			md-button(class='md-primary md-fab')
+	//- 				md-icon(class='material-icons step')
+	//- 			span {{1288323623006 | date:'HH:mm:ss'}}
+	//- 	md-divider 
+
+	md-list
+		md-list-item(class='md-3-line' layout-padding='0' layout='row' layout-align="space-between stretch")
+			div(class='md-list-item-text')
+				h3 Reporte
+				h4 PRI / Yucatán
+				p Análisis de Percepción Digital 
+			div(flex='nogrow')
+				md-button(class='md-primary md-fab' disabled="true" )
+					md-icon(class='material-icons step')
+				span {{1288323623006 | date:'HH:mm:ss'}}
+		md-divider 
+
+
+		md-list-item(class='md-3-line' layout-padding='0' layout='row' layout-align="space-between stretch")
+			div(class='md-list-item-text' flex)
+				h3 Optimización
+				h4 Posadas / Fiesta Americana
+				p Optimización Reporte Diario
+			div(flex='nogrow')
+				md-button(class='md-primary md-fab' disabled="true" )
+					md-icon(class='material-icons step')
+				span {{1288323623006 | date:'HH:mm:ss'}}
+		md-divider 
+
+
+		md-list-item(class='md-3-line' layout-padding='0' layout='row' layout-align="space-between stretch")
+			div(class='md-list-item-text' flex)
+				h3 Pitches
+				h4 Curiosity / Yucatan
+				p Análisis de percepción J Valdés
+			div(flex='nogrow')
+				md-button(class='md-primary md-fab' disabled="true" )
+					md-icon(class='material-icons step')
+				span {{1288323623006 | date:'HH:mm:ss'}}
+		md-divider 
+
