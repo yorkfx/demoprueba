@@ -48,7 +48,11 @@ div(layout='row' layout-xs='column' layout-align='space-between stretch')
 			//- CARDS
 			h3 Yesterday
 			//- Card 1
-			md-card(layout-padding layout='row') 
+			md-card(layout-padding layout='row' layout-align='center center') 
+				div(flex='nogrow') 
+					md-button
+						ng-md-icon(icon='delete')
+						md-tooltip Borrar
 				div(class='md-headline' flex) 
 					p Animacion Luces Neon
 				div(flex='nogrow') 
@@ -61,6 +65,10 @@ div(layout='row' layout-xs='column' layout-align='space-between stretch')
 
 			//- Card 1
 			md-card(layout-padding layout='row') 
+				div(flex='nogrow') 
+					md-button
+						ng-md-icon(icon='delete')
+						md-tooltip Borrar
 				div(class='md-headline' flex) 
 					p Cinemagraph De Agua
 				div(flex='nogrow') 
@@ -73,6 +81,10 @@ div(layout='row' layout-xs='column' layout-align='space-between stretch')
 
 			//- Card 1
 			md-card(layout-padding layout='row') 
+				div(flex='nogrow') 
+					md-button
+						ng-md-icon(icon='delete')
+						md-tooltip Borrar
 				div(class='md-headline' flex) 
 					p Animacion Tecate Menguante
 				div(flex='nogrow') 
