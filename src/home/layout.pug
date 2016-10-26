@@ -41,7 +41,59 @@ div(layout='row' layout-xs='column' layout-align='space-between stretch')
 					ng-md-icon(icon='person')
 					span Profile
 
-	md-content(flex ui-view='dashboardUI' layout-padding)
+	md-content(flex ui-view='dashboardUI' layout-padding class='dashboardUI')
 		section Input
 		md-divider
-		section Cards
+		section 
+			//- CARDS
+			h3 Yesterday
+			//- Card 1
+			md-card(layout-padding layout='row') 
+				div(class='md-headline' flex) 
+					p Animacion Luces Neon
+				div(flex='nogrow') 
+					div(class='md-headline') 2:29:16
+					div 
+						small 4:07PM - 4:38 PM
+				div(flex='nogrow') 
+					md-button
+						ng-md-icon(icon='play_arrow')
+
+			//- Card 1
+			md-card(layout-padding layout='row') 
+				div(class='md-headline' flex) 
+					p Cinemagraph De Agua
+				div(flex='nogrow') 
+					div(class='md-headline') 2:29:16
+					div 
+						small 4:07PM - 4:38 PM
+				div(flex='nogrow') 
+					md-button
+						ng-md-icon(icon='play_arrow')
+
+			//- Card 1
+			md-card(layout-padding layout='row') 
+				div(class='md-headline' flex) 
+					p Animacion Tecate Menguante
+				div(flex='nogrow') 
+					div(class='md-headline') 2:29:16
+					div 
+						small 4:07PM - 4:38 PM
+				div(flex='nogrow') 
+					md-button
+						ng-md-icon(icon='play_arrow')
+
+			//- CARDS
+			h3 Mon, 24 Oct
+
+			//- Card 1
+			md-card(layout-padding layout='row') 
+				div(class='md-headline' flex) 
+					p Animacion Luces Neon
+				div(flex='nogrow') 
+					div(class='md-headline') 2:29:16
+					div 
+						small 4:07PM - 4:38 PM
+				div(flex='nogrow') 
+					md-button
+						ng-md-icon(icon='play_arrow')
