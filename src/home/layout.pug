@@ -1,5 +1,5 @@
 div(layout='row' layout-xs='column' layout-align='space-between stretch')
-	aside(flex='15' id='menu')
+	aside(flex='nogrow' id='menu')
 		md-toolbar
 			h3 Curiosity Timesheet Panel
 		md-list
@@ -12,9 +12,10 @@ div(layout='row' layout-xs='column' layout-align='space-between stretch')
 			md-list-item(ng-click='')
 				ng-md-icon(icon='assessment')
 				span Reports
-			md-list-item(ng-click='')
-				ng-md-icon(icon='grade')
-				span Saved Reports
+
+			//- md-list-item(ng-click='')
+			//- 	ng-md-icon(icon='grade')
+			//- 	span Saved Reports
 
 		md-divider
 
@@ -42,8 +43,23 @@ div(layout='row' layout-xs='column' layout-align='space-between stretch')
 					span Profile
 
 	md-content(flex ui-view='dashboardUI' layout-padding class='dashboardUI')
-		section Input
-		md-divider
+
+		//- Timer & Button
+
+		section(layout='row' layout-align='center center' id='header-timer')
+			div(flex)
+				md-input-container(class='md-block' flex-gt-sm)
+					label We are you working on?
+					input
+			div(flex='nogrow')
+				div(class='md-headline')
+					md-button(class='md-mini md-fab demo-dialog-open-button' ng-click='ctrl.showDialog ($event)')
+						ng-md-icon(icon='local_offer')
+					span  2:29:16
+			div(flex='nogrow')
+				md-button(class='md-mini md-fab')
+					ng-md-icon(icon='play_arrow')
+
 		section 
 			//- CARDS
 			h3 Yesterday

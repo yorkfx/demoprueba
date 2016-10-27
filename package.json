@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yorkfx/demoprueba.git"
+    "url": "https://bitbucket.org/curiosity-media/cdc-timer"
   },
   "dependencies": {
     "angular": "^1.5.8",

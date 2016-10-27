@@ -1,0 +1,28 @@
+div(role='dialog' aria-label='Eat me!' layout='column' layout-align='center center')
+	md-toolbar
+		div(md-toolbar-tools)
+			h2 Agregar Etiquetas
+	div(class='demo-dialog-content')
+
+	div(layout='row')
+
+		md-input-container(class='md-block' flex)
+			label Agregar Etiquetas
+			input
+
+		md-divider
+
+		h5 Etiquetas
+
+		md-chips
+			md-chip-template 
+				strong Diseño
+
+			md-chip-template 
+				strong Tricaster
+
+			md-chip-template 
+				strong Animación
+
+	div(layout='row' class='demo-dialog-button')
+		md-button(md-autofocus flex class='md-primary' ng-click='ctrl.closeDialog()') Cerrar
